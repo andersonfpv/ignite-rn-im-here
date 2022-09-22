@@ -32,9 +32,9 @@ export default function Home(){
         </TouchableOpacity>
       </View>
 
-      <Participant />
-      <Participant />
-      <Participant />
+      <Participant name="Anderson"/>
+      <Participant name="Cláudia"/>
+      <Participant name="Maria"/>
     </View>
   )
 }
