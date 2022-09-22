@@ -14,6 +14,10 @@ export default function Home(){
       return Alert.alert("Participante existe", "Já existe um participante na lista com esse nome" );
     }
 
+    if(participantName.split(' ').join('') === '') {
+      return Alert.alert("Campo vazio", "Esse campo não pode estar vazio." );
+    }
+
     setParticipants(prevState => [...prevState, participantName]);
     setParticipantName('');
   }
