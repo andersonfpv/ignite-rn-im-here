@@ -7,7 +7,11 @@ import { styles } from "./styles";
 export default function Home(){
 
   function handleParticipanteAdd(){
-    console.log("Botão clicado");
+    console.log("Adicionado");
+  }
+
+  function handleParticipanteRemove(){
+    console.log("Removido");
   }
 
   return (
@@ -32,9 +36,7 @@ export default function Home(){
         </TouchableOpacity>
       </View>
 
-      <Participant name="Anderson"/>
-      <Participant name="Cláudia"/>
-      <Participant name="Maria"/>
+      <Participant name="Anderson" onRemove={handleParticipanteRemove}/>
     </View>
   )
 }
